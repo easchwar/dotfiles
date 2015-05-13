@@ -15,6 +15,10 @@ bindkey '^[[B' history-substring-search-down
 autoload -U colors
 colors
 
+# zsh completion stuff: needed these to make git completion work
+autoload -U compinit && compinit
+zmodload -i zsh/complist
+
 # enable colored output from ls, etc
 export CLICOLOR=1
 
