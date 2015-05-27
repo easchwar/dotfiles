@@ -29,7 +29,8 @@ filetype plugin indent on    " required
 
 syntax on
 
-let g:syntastic_ruby_checkers = ['rubylint']
+let g:syntastic_ruby_checkers = ['']
+let g:syntastic_quiet_messages = { 'type': 'style' }
 set hidden
 
 " Better command-line completion
@@ -97,3 +98,4 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
+cabbrev E Explore
