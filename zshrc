@@ -50,6 +50,7 @@ alias "be"="bundle exec"
 alias "gadd"="git add"
 alias "gaa"="git add -A"
 alias "gcm"="git commit -m"
+alias "v=vim"
 
 eval "$(rbenv init -)"
 eval "$(hub alias -s)"
