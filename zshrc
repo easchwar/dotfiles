@@ -48,9 +48,16 @@ bindkey '^R' history-incremental-search-backward
 
 alias "be"="bundle exec"
 alias "gadd"="git add"
+alias "g"="git"
 alias "gaa"="git add -A"
 alias "gcm"="git commit -m"
+alias "gco"="git checkout"
+alias "gs"="git status"
 alias "v=vim"
+alias "aa"="cd ~/appacademy"
+alias "slack"="~/slackbot.sh"
+
+alias "zip_all_files"='for f in *; do zip -r $f.zip $f; done'
 
 eval "$(rbenv init -)"
 eval "$(hub alias -s)"

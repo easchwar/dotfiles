@@ -11,9 +11,15 @@ Plugin 'altercation/vim-colors-solarized'  " solarized color
 "Plugin 'timheap/linters.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tcomment_vim'
+" for snippets
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
+
+" for searching
+Plugin 'rking/ag.vim'
+
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-rails'
 Plugin 'scrooloose/nerdtree'
@@ -53,6 +59,7 @@ set mouse=a
 set cmdheight=2
 
 set number
+set relativenumber
 syntax enable
 set background=dark
 
@@ -83,3 +90,15 @@ nnoremap <C-L> :nohl<CR><C-L>
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 cabbrev E Explore
+
+" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use Ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+
+  " Ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
