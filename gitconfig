@@ -4,17 +4,19 @@
   aa = add -A
   cm = commit -m
   d = difftool
+[core]
+  editor = vim  
+  excludesfile = /Users/easchwar/.gitignore_global
 [diff]
   tool = vimdiff
 [difftool]
   prompt = false
 [merge]
-  tool = fugitive 
+  tool = vimdiff 
+[mergetool]
+  keepBackup = false
 [push]
   default = matching
 [user]
   name = easchwar
   email = easchwarzenbach@gmail.com
-[core]
-  editor = vim  
-  excludesfile = /Users/easchwar/.gitignore_global
