@@ -1,0 +1,20 @@
+[alias]
+  b = branch
+  co = checkout
+  aa = add -A
+  cm = commit -m
+  d = difftool
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
+[merge]
+  tool = fugitive 
+[push]
+  default = matching
+[user]
+  name = easchwar
+  email = easchwarzenbach@gmail.com
+[core]
+  editor = vim  
+  excludesfile = /Users/easchwar/.gitignore_global

@@ -12,6 +12,8 @@ Plugin 'altercation/vim-colors-solarized'  " solarized color
 Plugin 'scrooloose/syntastic'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tcomment_vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'kchmck/vim-coffee-script'
 " for snippets
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'

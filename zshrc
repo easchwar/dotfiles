@@ -55,7 +55,10 @@ alias "gco"="git checkout"
 alias "gs"="git status"
 alias "v=vim"
 alias "aa"="cd ~/appacademy"
+alias "r"="bundle exec rspec"
+
 alias "slack"="~/slackbot.sh"
+alias "schwarz"="./bin/slack xoxb-7338888535-H7yLopHOs1hD6b2KlZwCEprh"
 
 alias "zip_all_files"='for f in *; do zip -r $f.zip $f; done'
 
