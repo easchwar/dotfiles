@@ -89,6 +89,13 @@ map Y y$
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 nnoremap <C-L> :nohl<CR><C-L>
 
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+nnoremap <C-n> :NERDTreeToggle<CR>
+
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 cabbrev E Explore

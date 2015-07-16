@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="gitconfig sqliterc vimrc zshrc pryrc rcrc rspec"    # list of files/folders to symlink in homedir
+files="railsrc gitconfig sqliterc vimrc zshrc pryrc rcrc rspec"    # list of files/folders to symlink in homedir
 
 ##########
 
