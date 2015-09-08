@@ -34,6 +34,9 @@ export PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$
 # required by rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 
+# for npm
+export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
+
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 

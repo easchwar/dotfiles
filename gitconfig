@@ -4,6 +4,7 @@
   aa = add -A
   cm = commit -m
   d = difftool
+  l = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short 
 [core]
   editor = vim  
   excludesfile = /Users/easchwar/.gitignore_global

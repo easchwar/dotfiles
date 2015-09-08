@@ -31,6 +31,9 @@ filetype plugin indent on    " required
 syntax on
 let g:syntastic_ruby_checkers = ['']
 let g:syntastic_quiet_messages = { 'type': 'style' }
+" bind .ejs to html for syntax
+au BufNewFile,BufRead *.ejs set filetype=html
+
 set hidden
 " Better command-line completion
 set wildmenu
@@ -65,8 +68,14 @@ set relativenumber
 syntax enable
 set background=dark
 
-let g:solarized_termcolors = 256
-colorscheme solarized
+if &diff
+  let g:solarized_termcolors = 256
+  colorscheme solarized 
+else
+  let g:molokai_original = 1
+  let g:rehash256 = 1
+  colorscheme molokai 
+endif
 
 let NERDTreeShowHidden=1
 " Quickly time out on keycodes, but never time out on mappings
