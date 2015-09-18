@@ -1,2 +1,3 @@
--T
--d postgresql
+--database=postgresql
+--skip-bundle
+--skip-test-unit
